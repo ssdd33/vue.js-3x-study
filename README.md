@@ -97,6 +97,8 @@ const routes = [
 
 2. 사용자가 메뉴에 접속하는 순간에 해당 메뉴에 대한 컴포넌트만 js파일로 다운로드
 
+- 다수의 컴포넌트에 동일한 webpackChunkName을 설정할 경우 하나의 라우트에 접근하면 동일한 설정의 파일을 모두 내려받는다.
+
 ```
 const routes = [
   {
@@ -104,7 +106,7 @@ const routes = [
     name: 'about',
     component: () =>
       import(
-        /* webpackChunkName: "about", webpackPrefetch:true */ '../views/AboutView.vue'
+        /* webpackChunkName: "about" */ '../views/AboutView.vue'
       )
   }
 ]
@@ -126,4 +128,18 @@ webpackChunkName: "databinding" */ '../views/1_databinding/DataBindingString.vue
 - views : 화면 전체에 해당하는 컴포넌트. xxxView 형태의 네이밍 규칙이 추천된다.
 - components : 재사용 가능한 단위 ui + 스크립트 기능의 결합 형태의 컴포넌트
 
-### 데이터 바인딩
+### Vue User Snippets 등록 (강의 문서 발췌)
+
+1. File > Preference > User Snippets 메뉴 이동
+2. 검색창에 vue입력 -> vue 선택
+3. 아래 코드 입력
+
+```
+"Generate Basic Vue Code": {
+    "prefix": "vue-start",
+    "body": [
+      "<template>\n\t<div></div>\n</template>\n<script>\nexport default {\n\tcomponents: {}, \n\tdata() {\n\t\treturn {\n\t\t\tsampleData:''\n\t\t}\n\t},\n\tsetup() {},\n\tcreated() {},\n\tmounted() {},\n\tunmounted() {},\n\tmethods:{}\n}\n</script>"
+    ],
+    "description": "Generate Basic Vue Code"
+  }
+```
