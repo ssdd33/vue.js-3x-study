@@ -17,6 +17,14 @@ const routes = [
       import(
         /* webpackChunkName: "about", webpackPrefetch:true */ '../views/AboutView.vue'
       )
+  },
+  {
+    path: '/databing/string',
+    name: 'DataBindingStringView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch:true */ '../views/1_databinding/DataBindingStringView.vue'
+      )
   }
 ]
 
