@@ -1,7 +1,9 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
+    <router-link to="/about">About</router-link>
+    <br />
+    <br />
     <router-link to="/databinding/string">String</router-link> |
     <router-link to="/databindiing/html">Html</router-link> |
     <router-link to="/databindiing/input">input</router-link> |
@@ -12,6 +14,11 @@
     <router-link to="/databinding/list">list</router-link> |
     <router-link to="/databinding/class">class</router-link> |
     <router-link to="/databinding/style">style</router-link>
+    <br />
+    <br />
+    <router-link to="/event/click">click</router-link> |
+    <router-link to="/event/change">change</router-link>|
+    <router-link to="/event/key">key</router-link>
   </nav>
   <router-view />
 </template>
