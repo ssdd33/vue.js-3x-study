@@ -19,7 +19,7 @@ const routes = [
       )
   },
   {
-    path: '/databindiing/string',
+    path: '/databinding/string',
     name: 'DataBindingStringView',
     component: () =>
       import(
@@ -120,6 +120,38 @@ const routes = [
     component: () =>
       import(
         /* webpackChunkName: "event", webpackPrefetch:true */ '../views/2_event/EventKeyView.vue'
+      )
+  },
+  {
+    path: '/syntax/render',
+    name: 'RenderingSyntax',
+    component: () =>
+      import(
+        /* webpackChunkName: "syntax", webpackPrefetch:true */ '../views/3_syntax/RenderingSyntax.vue'
+      )
+  },
+  {
+    path: '/syntax/computed',
+    name: 'ComputedSyntax',
+    component: () =>
+      import(
+        /* webpackChunkName: "syntax", webpackPrefetch:true */ '../views/3_syntax/WatchSyntax.vue'
+      )
+  },
+  {
+    path: '/practice/searchView',
+    name: 'SearchView',
+    component: () =>
+      import(
+        /* webpackChunkName: "practice", webpackPrefetch:true */ '../views/SearchView.vue'
+      )
+  },
+  {
+    path: '/practice/saveDataView',
+    name: 'SaveDataView',
+    component: () =>
+      import(
+        /* webpackChunkName: "practice", webpackPrefetch:true */ '../views/SaveDataView.vue'
       )
   }
 ]
