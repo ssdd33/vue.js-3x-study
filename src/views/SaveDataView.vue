@@ -22,7 +22,7 @@ export default {
   methods: {
     saveUserInfo() {
       if (this.name === '') {
-        return alert('이름을 입력하세요')
+        return this.$swal('이름을 입력하세요')
       }
 
       if (this.age === 0 || this.age === '') {

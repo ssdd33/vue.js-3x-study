@@ -31,6 +31,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ## 강의 노트
 
 [vue.js 3x 입문 강의 - 개발자의 품격](https://www.youtube.com/watch?v=b0ImUEsqaAA&t=3208s)
+& 인프런 강의
 
 ### 프로젝트 생성
 
