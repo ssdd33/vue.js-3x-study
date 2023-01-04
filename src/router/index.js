@@ -19,7 +19,7 @@ const routes = [
       )
   },
   {
-    path: '/databing/string',
+    path: '/databindiing/string',
     name: 'DataBindingStringView',
     component: () =>
       import(
@@ -27,11 +27,75 @@ const routes = [
       )
   },
   {
-    path: '/databing/html',
+    path: '/databindiing/html',
     name: 'DataBindingHtmlView',
     component: () =>
       import(
         /* webpackChunkName: "databinding", webpackPrefetch:true */ '../views/1_databinding/DataBindingHtmlView.vue'
+      )
+  },
+  {
+    path: '/databindiing/input',
+    name: 'DataBindingInputView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch:true */ '../views/1_databinding/DataBindingInputView.vue'
+      )
+  },
+  {
+    path: '/databindiing/select',
+    name: 'DataBindingSelectView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch:true */ '../views/1_databinding/DataBindingSelectView.vue'
+      )
+  },
+  {
+    path: '/databindiing/check',
+    name: 'DataBindingCheckboxView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch:true */ '../views/1_databinding/DataBindingCheckboxView.vue'
+      )
+  },
+  {
+    path: '/databindiing/radio',
+    name: 'DataBindingRadioView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch:true */ '../views/1_databinding/DataBindingRadioView.vue'
+      )
+  },
+  {
+    path: '/databindiing/attribute',
+    name: 'DataBindingAttributeView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch:true */ '../views/1_databinding/DataBindingAttributeView.vue'
+      )
+  },
+  {
+    path: '/databinding/list',
+    name: 'DataBindingListView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch:true */ '../views/1_databinding/DataBindingListView.vue'
+      )
+  },
+  {
+    path: '/databinding/class',
+    name: 'DataBindingClassView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch:true */ '../views/1_databinding/DataBindingClassView.vue'
+      )
+  },
+  {
+    path: '/databinding/style',
+    name: 'DataBindingStyleView',
+    component: () =>
+      import(
+        /* webpackChunkName: "databinding", webpackPrefetch:true */ '../views/1_databinding/DataBindingStyleView.vue'
       )
   }
 ]
