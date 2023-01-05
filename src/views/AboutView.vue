@@ -1,5 +1,20 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <div><PageTitle title="프롭스 타이틀" /></div>
 </template>
+<script>
+import PageTitle from '../components/PageTitle.vue'
+
+export default {
+  components: { PageTitle },
+  data() {
+    return {
+      sampleData: ''
+    }
+  },
+  setup() {},
+  created() {},
+  mounted() {},
+  unmounted() {},
+  methods: {}
+}
+</script>
