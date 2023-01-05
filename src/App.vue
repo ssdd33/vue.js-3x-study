@@ -29,7 +29,8 @@
     <br />
     <span id="title">practice</span>
     <router-link to="/practice/searchView">search view</router-link> |
-    <router-link to="/practice/saveDataView">save data view</router-link>
+    <router-link to="/practice/saveDataView">save data view</router-link> |
+    <router-link to="/practice/serverdata">server data</router-link>
   </nav>
   <router-view />
 </template>

@@ -153,6 +153,14 @@ const routes = [
       import(
         /* webpackChunkName: "practice", webpackPrefetch:true */ '../views/SaveDataView.vue'
       )
+  },
+  {
+    path: '/practice/serverdata',
+    name: 'ServerData',
+    component: () =>
+      import(
+        /* webpackChunkName: "practice", webpackPrefetch:true */ '../views/ServerData.vue'
+      )
   }
 ]
 
